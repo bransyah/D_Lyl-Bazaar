@@ -15,7 +15,7 @@ if(isset($_POST['login'])){
     
     // bind parameter ke query
     $params = array(
-        ":username" => $username
+        ":username" => $username 
     );
 
     $stmt->execute($params);
@@ -104,30 +104,31 @@ if(isset($_POST['login'])){
                 </section>
             </div>
 
-            <div id="register" class="animate form registration_form">
-                <section class="login_content">
-                    <form>
-                        <h1>Create Account</h1>
+            <div id="register" class="animate form registration_form"> <!--<p> menimbulkan efek pada tombol register <P>-->
+                <section class="login_content"> <!--<p> hanya memiliki satu tombol yang berfungsi <P>-->
+
+                    <form> <!--<p> untuk menampung banyak elemen pada login <P>-->
+                        <h1>Create Account</h1> <!--<p> untuk mengatur ukuran font P>-->
                         <div>
-                            <input type="text" class="form-control" placeholder="Username" required="" />
+                            <input type="text" class="form-control" placeholder="Username" required="" /> <!--<p> fungsi ini untuk menampilkan kolom username <P>-->
                         </div>
                         <div>
-                            <input type="tel" class="form-control" placeholder="Phone" required="" />
+                            <input type="tel" class="form-control" placeholder="Phone" required="" /> <!--<p> fungsi ini untuk menampilkan kolom phone <P>-->
                         </div>
                         <div>
-                            <input type="text" class="form-control" placeholder="Company Name" required="" />
+                            <input type="text" class="form-control" placeholder="Company Name" required="" /> <!--<p> fungsi ini untuk menampilkan kolom company name <P>-->
                         </div>
                         <div>
-                            <input type="text" class="form-control" placeholder="Address" required="" />
+                            <input type="text" class="form-control" placeholder="Address" required="" /> <!--<p> fungsi ini untuk menampilkan kolom address <P>-->
                         </div>
                         <div>
-                            <input type="password" class="form-control" placeholder="Password" required="" />
+                            <input type="password" class="form-control" placeholder="Password" required="" /> <!--<p> fungsi ini untuk menampilkan kolom password <P>-->
                         </div>
                         <div>
-                            <a class="btn btn-default submit" href="index.html">Submit</a>
+                            <a class="btn btn-default submit" href="index.html">Submit</a> <!--<p> fungsi tombol tuisan login dan mengalihkan ke laman index <P>-->
                         </div>
 
-                        <div class="clearfix"></div>
+                        <div class="clearfix"></div> <!--<p> fungsi ini untuk mengosongkan kolom username, phone, company name, address, dan password <P>-->
 
                         <div class="separator">
                             <p class="change_link">Already a member ?
