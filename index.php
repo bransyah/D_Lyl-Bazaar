@@ -1,7 +1,7 @@
 <?php 
-
+//fungsi untuk menghubungkan ke database
 require_once("config.php");
-
+//
 if(isset($_POST['login'])){
 
     $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
@@ -61,21 +61,21 @@ if(isset($_POST['login'])){
     <!-- Custom Theme Style -->
     <link href="build/css/custom.min.css" rel="stylesheet">
 </head>
-
+<!--<p> penanda bahwa ini bagian login <P>-->
 <body class="login">
     <div>
-        <a class="hiddenanchor" id="signup"></a>
-        <a class="hiddenanchor" id="signin"></a>
+        <a class="hiddenanchor" id="signup"></a> <!--<p> hidden anchor berfungsi sebagai link ke database dengan penanda signup <P>-->
+        <a class="hiddenanchor" id="signin"></a> <!--<p> hidden anchor berfungsi sebagai link ke database dengan penanda signin <P>-->
 
-        <div class="login_wrapper">
-            <div class="animate form login_form">
-                <section class="login_content">
-                    <form>
-                        <h1>Login Form</h1>
+        <div class="login_wrapper"> <!--<p> wrapper disini digunakan untuk mebuat kotak pada bagian login <P>-->
+            <div class="animate form login_form"> <!--<p> membuat efek pada tombol login <P>-->
+                <section class="login_content"> <!--<p> menandakan bahwa hanya login yang dapat di tekan <P>-->
+                    <form> <!--<p> untuk menampung banyak elemen pada login <P>-->
+                        <h1>Login Form</h1> <!--<p> heading h1 sebagai penanda pencarian login form <P>-->
 
-                        <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" class="form-control" placeholder="Username" required="" />
+                        <div class="form-group"> <!--<p> membuat kolom masukan untuk username, form group digunakan untuk membalut semua fungsi di bawah menjadi kolom masukan<P>-->
+                            <label for="username">Username</label> <!--<p> melabelkan bahwa kotak tersebut adalah untuk username <P>-->
+                            <input type="text" class="form-control" placeholder="Username" required="" /> <!--<p> fungsi ini berisi tipe masukan dan jenis tulisan pada kotak username <P>-->
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
@@ -84,11 +84,11 @@ if(isset($_POST['login'])){
 
 
                         <div>
-                            <a class="btn btn-default submit" href="index.html">Log in</a>
+                            <a class="btn btn-default submit" href="index.html">Log in</a> <!--<p> fungsi tombol tuisan login <P>-->
 
                         </div>
 
-                        <div class="clearfix"></div>
+                        <div class="clearfix"></div> <!--<p> mengosongkan kedua kolom username dan password apabila data tidak di temukan <P>-->
 
                         <div class="separator">
                             <p class="change_link">New to site?
