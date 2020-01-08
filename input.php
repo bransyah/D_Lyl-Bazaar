@@ -45,6 +45,8 @@
                     <div class="clearfix"></div>
 
                     <!-- menu profile quick info -->
+                    <!-- /disini menampilkan selamat datang bla-bla -->
+
                     <div class="profile clearfix">
 
                         <div class="profile_info">
@@ -77,6 +79,8 @@
                     <!-- /sidebar menu -->
 
                     <!-- /menu footer buttons -->
+                    <!-- /disini fungsi untuk pengaturan tombol -->
+
                     <div class="sidebar-footer hidden-small">
 
                         <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
@@ -118,6 +122,8 @@
             <!-- /top navigation -->
 
             <!-- page content -->
+            <!-- /input -->
+
             <div class="right_col" role="main">
                 <div class="">
                     <div class="page-title">
@@ -167,6 +173,9 @@
                                     </ul>
                                     <div class="clearfix"></div>
                                 </div>
+
+                                
+
                                 <div class="x_content">
                                     <br />
                                     <form id="demo-form2" data-parsley-validate class="form-horizontal
@@ -179,6 +188,7 @@
                                                     <span
                                                         class="required">*</span>
                                                 </label>
+                                    
                                             <div class="col-md-6 col-sm-6">
                                                 <input type="time" id="jam" required="required" class="form-control">
                                             </div>
