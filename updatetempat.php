@@ -11,7 +11,7 @@ $update = mysqli_query ($db,"UPDATE tempat SET jumlah = jumlah + '$jumlah' WHERE
 var_dump($waktu); // var_dump untuk menampilkan hasil variabel dan juga memperlihatkan jenis tipe dari variabel tersebut
 var_dump($daerah); // var_dump untuk menampilkan hasil variabel dan juga memperlihatkan jenis tipe dari variabel tersebut
 var_dump($waktu); // var_dump untuk menampilkan hasil variabel dan juga memperlihatkan jenis tipe dari variabel tersebut
-var_dump($update); // var_dump untuk menampilkan hasil variabel dan juga memperlihatkan jenis tipe dari variabel tersebut
+var_dump($update); // var_dump untuk menampilkan hasil variabel dan  juga memperlihatkan jenis tipe dari variabel tersebut
 
 //jika query update sukses dilakukan
 
