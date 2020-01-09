@@ -2,7 +2,7 @@
 
 $db_host = "localhost"; //memasukkan nama host 
 $db_user = "id11968465_betul";// memasukkan nama user
-$db_pass = "betul";// memasukkan password
+$db_pass = "id11968465_betul";// memasukkan password
 $db_name = "id11968465_betul";
 
 try {    
@@ -10,3 +10,5 @@ try {
 } catch(PDOException $e) {
     die("Terjadi masalah: " . $e->getMessage()); //menampilkan terjadi masalah 
 }
+
+
