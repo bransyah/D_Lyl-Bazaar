@@ -20,12 +20,12 @@ if(isset($_POST['register'])){
     
 
 
-    // menyiapkan query
+    // menyiapkan query /perintah (memanipulasi data baik itu menambah, menghapus dan mengubah data )
     $sql = "INSERT INTO transaksi (waktu, jumlah, pemasukan, daerah) 
             VALUES (:waktu, :jumlah, :pemasukan, :daerah)";
-    $stmt = $db->prepare($sql);
+    $stmt = $db->prepare($sql); // prepare yaitu mempersiapkan query yang akan di jalankan
 
-    // bind parameter ke query
+    // bind (mengirim data yang telah di tandai)  parameter ke query
     $params = array(
         ":waktu" => $waktu,
         ":jumlah" => $jumlah,
